@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0;
+            height: 5000px;
+            background:url("hip-square.png");
+            padding-top:50px ;
+            
+            
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        i.fa-twitter {
+            float: left;
+            font-size: 21px;
+            color: #1DA1F2;
+            padding-right: 2px;
+            line-height: 1;
+            margin: 11px 0 0 10px;
+        }
+
+        .navbar {
+            box-shadow: 0 0.5px 1px 0;
+            position: fixed;
+            width: 100%;
+            background-color: white;
+            top:0;
+            left:0;
+            z-index: 99;
+        }
+
+        .left-box {
+            float: left;
+            font-size: 15px;
+            bottom: 0;
+        }
+
+        .right-box {
+
+            float: right;
+
+        }
+
+
+        .clearfix {
+            clear: both;
+        }
+
+        .navbar-link {
+            margin: 0 15px;
+            color:rgb(102, 117, 127);
+            display: inline-block;
+            height: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 50px;
+            text-decoration: none;
+          
+
+        }
+
+        .search-box {
+            border:1px solid rgb(190, 194, 197);
+            border-radius: 15px;
+            padding: 5px 10px;
+
+        }
+
+        .search-box:focus {
+            outline: none;
+            border:1px solid #1DA1F2;
+        }
+
+
+
+        .section_img {
+            background-attachment: scroll;
+            background-attachment: fixed;
+            height: 500px;
+            background-image: url("https://c.wallhere.com/photos/92/76/Toy_Story_animated_movies_movies-246389.jpg!d");
+            background-size: cover;
+            background-position: 0 16%;
+
+
+            
+
+        }
+        .navbar2 {
+            position: sticky;
+            top:50px;
+            background-color:rgb(248, 228, 221);
+            box-shadow: 0 0.5px 4px rgb(212, 193, 185);
+
+        }
+
+
+
+        .navbar2 .container {
+            position: relative;
+        }
+
+
+
+         .box_photo {
+            width: 150px;
+            height: 150px;
+            background-color:darkgrey;
+            overflow: hidden;
+            border-radius: 50%;
+            position:absolute;
+            border: 5px solid white;
+            left: 0;
+            top: -80px;
+            background-image: url("https://cdn.cultofmac.com/wp-content/uploads/2016/11/Toy-Story-2-image-toy-story-2-36440635-1024-768-780x585.jpg");
+            background-size: cover;
+            background-position: 0 16%;
+
+
+        
+        }
+
+        .navbar2 .title {
+            margin-left: 50px;
+
+
+            
+
+        }
+
+        .box img {
+            transition: 0.3s;
+        }
+
+        .box img:hover {
+            transform: scale(1.05);
+
+        }
+
+        .navbar2 .left-box {
+            float:left;
+            margin-left: 300px;
+
+        }
+        
+
+        
+        .navbar2 .left-box .nav-link{ 
+            line-height: 25px;
+            display: block;
+            color:rgb(102, 117, 127);
+            float:left;
+            text-align: center;
+            font-size: 14px;
+            font-weight:900;
+            text-decoration: none;
+            padding: 15px;
+            
+        }
+
+      
+        .navbar2 .left-box .nav-link span {
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .navbar2 .left-box .nav-link:hover {
+            border-bottom: 2px solid #1DA1F2;
+        }
+
+        .navbar2 .right-box {
+            float:right;
+            padding: 18px;
+            line-height: 25px;
+        }
+
+
+
+
+
+        .navbar2 .right-box .follow {
+            border:1px solid  #1DA1F2;
+            border-radius: 15px;
+            padding: 5px 35px;
+           
+        }
+
+        .right_title {
+            
+            color:rgb(29, 161, 242);
+            font-size: 14px;
+            font-weight: 700;
+            font-stretch: 100%;
+            line-height: 20px;
+            text-align: center;
+          
+
+        }
+
+        .navbar2.clearfix {
+            clear: both;
+
+        }
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+
+            <div class="left-box"></div>
+            <a class="navbar-link" href="#"><i class="fab fa-twitter"></i><span>首頁</span></a>
+            <a class="navbar-link" href="#"><span>關於</span></a>
+            <div class="right-box">
+                <input class="search-box" type="text"placeholder="搜尋 Twitter" value=""required>
+                <span class="navbar-link">已經擁有帳戶？ 登入</span>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+
+    </nav>
+    <div class="section_img"> 
+        
+    </div>
+    <nav class="navbar2">
+        <div class="container">
+            <div class="left-box">
+                    <div class="box_photo"></div>   
+                    <a class="nav-link" href="">推文<br><span> 6 </span></a>
+                    <a class="nav-link" href="">正在跟隨<br><span>8</span></a>
+                    <a class="nav-link" href="">跟隨者<br><span>6.31萬</span></a>
+                    <a class="nav-link" href="">喜歡的內容<br><span>1</span></a>
+                    <div class="clearfix"></div>
+                </div> 
+                            
+
+            <div class="right-box">
+                <div class="follow">
+                    <span class="right_title">跟隨</span></div>
+            
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+
+    </nav>
+
+</body>
+
+</html>
